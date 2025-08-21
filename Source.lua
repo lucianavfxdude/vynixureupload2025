@@ -19,7 +19,7 @@ local localPlayerGui = localPlayer:WaitForChild("PlayerGui")
 local localMouse = localPlayer:GetMouse()
 
 local assets = {
-    Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixureupload2025/blob/main/CuriousRepentance.rbxm?raw=true"),
+    Repentance = LoadCustomInstance("https://github.com/RegularVynixu/Utilities/blob/main/Doors/Entity%20Spawner/Assets/Repentance.rbxm?raw=true"),
     Crucifix = LoadCustomInstance("https://github.com/lucianavfxdude/vynixureupload2025/raw/refs/heads/main/Crucifix.rbxm")
 }
 local moduleScripts = {
@@ -84,7 +84,6 @@ function Crucifix(model, playerTool, config)
 	local pentagram = repentance.Pentagram
 	local entityPart = repentance.Entity
 	local sound = (config.Resist and crucifix.SoundFail or crucifix.Sound)
-	local curiouslightouch = crucifix.Warble
 	local shaker = moduleScripts.Main_Game.camShaker:StartShake(5, 20, 2, Vector3.new())
 
     -- Repentance setup
@@ -93,7 +92,6 @@ function Crucifix(model, playerTool, config)
 	repentance.Entity.CFrame = entityPivot
     crucifix.BodyPosition.Position = (localCharacter:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
-	curiouslightouch:Play()
 	sound:Play()
 
     -- Teleport model to repentance entity part

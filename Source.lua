@@ -19,7 +19,7 @@ local localPlayerGui = localPlayer:WaitForChild("PlayerGui")
 local localMouse = localPlayer:GetMouse()
 
 local assets = {
-    Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixureupload2025/blob/main/Repentance.rbxm?raw=true"),
+    Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixureupload2025/blob/main/yRepentance.rbxm?raw=true"),
     Crucifix = LoadCustomInstance("https://github.com/lucianavfxdude/vynixureupload2025/raw/refs/heads/main/Crucifix.rbxm")
 }
 local moduleScripts = {
@@ -92,6 +92,7 @@ function Crucifix(model, playerTool, config)
 	repentance.Entity.CFrame = entityPivot
     crucifix.BodyPosition.Position = (localCharacter:GetPivot() * CFrame.new(0.5, 3, -6)).Position
 	repentance.Parent = workspace
+	crucifix.Warble:Play()
 	sound:Play()
 
     -- Teleport model to repentance entity part

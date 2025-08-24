@@ -19,7 +19,7 @@ local localPlayerGui = localPlayer:WaitForChild("PlayerGui")
 local localMouse = localPlayer:GetMouse()
 
 local assets = {
-    Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixureupload2025/blob/main/Repentance.rbxm?raw=true"),
+    Repentance = LoadCustomInstance("https://github.com/lucianavfxdude/vynixureupload2025/blob/main/yRepentance.rbxm?raw=true"),
     Crucifix = LoadCustomInstance("https://github.com/lucianavfxdude/vynixureupload2025/raw/refs/heads/main/Crucifix.rbxm")
 }
 local moduleScripts = {
